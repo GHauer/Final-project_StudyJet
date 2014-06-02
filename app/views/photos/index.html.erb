@@ -1,3 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel</title>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+         <div class="container">
+    <div class="page-header">
+      <h1>Carousel Test</h1>
+    </div>
+
+
+    <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+             <img src="images/Students-Learning.jpg" alt="...">
+              <div class="carousel-caption">
+                Company name
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/IMG_2170.jpg" alt="...">
+              <div class="carousel-caption">
+                Working place
+              </div>
+          </div>
+            <div class="item">
+              <img src="images/students.jpg" alt="...">
+              <div class="carousel-caption">
+                Students
+              </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
 <% @photos.each do |photo| %>
   <div class="row">
     <div class="col-md-2 col-md-offset-1">
