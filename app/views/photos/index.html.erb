@@ -18,14 +18,14 @@
 </head>
 <body>
 
-         <div class="container">
+  <div class="container">
+
     <div class="page-header">
-      <h1>Welcome!</h1>
+      <h1>Welcome to StudyJet!</h1>
     </div>
 
-
-    <div class="col-md-12">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div class="col-md-12">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -38,7 +38,7 @@
           <div class="item active">
              <img src="images/Students-Learning.jpg" alt="...">
               <div class="carousel-caption">
-                Company name
+                More students
               </div>
           </div>
           <div class="item">
@@ -70,8 +70,42 @@
 </body>
 </html>
 
+<!-- three headers with thumbnails -->
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="feature-icons-01.jpg/300x200" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="feature-icons-01.jpg/300x200" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/feature-icons-01.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<!--  present saved photos -->
 <% @photos.each do |photo| %>
   <div class="row">
     <div class="col-md-2 col-md-offset-1">
