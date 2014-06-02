@@ -23,7 +23,9 @@
     <% @courses.each do |course| %>
       <tr>
         <td><%= course.course_url %></td>
-        <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/zZAWygYoN30" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Embed dynamic YouTube video -->
+        <iframe title="YouTube video player" width="640" height="390" src=course.course_url frameborder="0" allowfullscreen></iframe>
         <td><%= course.course_number %></td>
         <td><%= course.course_name %></td>
         <td><%= course.caption %></td>
