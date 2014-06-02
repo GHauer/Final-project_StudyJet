@@ -1,5 +1,39 @@
 Rails.application.routes.draw do
 
+  # Routes for the Subject resource:
+  # CREATE
+  get('/subjects/new', { :controller => 'subjects', :action => 'new' })
+  get('/create_subject', { :controller => 'subjects', :action => 'create' })
+
+  # READ
+  get('/subjects', { :controller => 'subjects', :action => 'index' })
+  get('/subjects/:id', { :controller => 'subjects', :action => 'show' })
+
+  # UPDATE
+  get('/subjects/:id/edit', { :controller => 'subjects', :action => 'edit' })
+  get('/update_subject/:id', { :controller => 'subjects', :action => 'update' })
+
+  # DELETE
+  get('/delete_subject/:id', { :controller => 'subjects', :action => 'destroy' })
+  #------------------------------
+
+  # Routes for the Course resource:
+  # CREATE
+  get('/courses/new', { :controller => 'courses', :action => 'new' })
+  get('/create_course', { :controller => 'courses', :action => 'create' })
+
+  # READ
+  get('/courses', { :controller => 'courses', :action => 'index' })
+  get('/courses/:id', { :controller => 'courses', :action => 'show' })
+
+  # UPDATE
+  get('/courses/:id/edit', { :controller => 'courses', :action => 'edit' })
+  get('/update_course/:id', { :controller => 'courses', :action => 'update' })
+
+  # DELETE
+  get('/delete_course/:id', { :controller => 'courses', :action => 'destroy' })
+  #------------------------------
+
   get('/photos/search', { :controller => "photos", :action => "search" })
 
   get("/my_timeline", { :controller => "photos", :action => "my_timeline" })
