@@ -8,9 +8,9 @@
   <thead>
     <tr>
       <th>Course url</th>
-      <th>Caption</th>
       <th>Course number</th>
       <th>Course name</th>
+      <th>Caption</th>
       <th>File type</th>
       <th>Subject number</th>
       <th></th>
@@ -23,9 +23,10 @@
     <% @courses.each do |course| %>
       <tr>
         <td><%= course.course_url %></td>
-        <td><%= course.caption %></td>
+        <iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/zZAWygYoN30" frameborder="0" allowfullscreen></iframe>
         <td><%= course.course_number %></td>
         <td><%= course.course_name %></td>
+        <td><%= course.caption %></td>
         <td><%= course.file_type %></td>
         <td><%= course.subject_number %></td>
         <td>
