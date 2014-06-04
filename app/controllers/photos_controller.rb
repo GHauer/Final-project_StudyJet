@@ -83,13 +83,4 @@ class PhotosController < ApplicationController
     render 'index'
   end
 
-
-
-
-
-
-
-
-
-
 end
