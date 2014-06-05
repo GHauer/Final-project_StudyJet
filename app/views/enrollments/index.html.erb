@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Enrollments</h1>
+</div>
+
+<p><a href="/enrollments/new" class="btn btn-primary">Add a New Enrollment</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Lesson</th>
+      <th>Subject</th>
+      <th>User name</th>
+      <th>Subject number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enrollments.each do |enrollment| %>
+      <tr>
+        <td><%= enrollment.lesson_id %></td>
+        <td><%= enrollment.subject_id %></td>
+        <td><%= enrollment.user_name %></td>
+        <td><%= enrollment.subject_number %></td>
+        <td>
+          <a href="/enrollments/<%= enrollment.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/enrollments/<%= enrollment.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_enrollment/<%= enrollment.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
