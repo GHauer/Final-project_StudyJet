@@ -19,7 +19,7 @@ class EnrollmentsController < ApplicationController
     @enrollment.subject_number = params[:subject_number]
 
     if @enrollment.save
-      redirect_to "/enrollments", :notice => "Enrollment created successfully."
+      redirect_to :back, :notice => "Enrollment successfull."
     else
       render 'new'
     end
