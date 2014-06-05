@@ -1,5 +1,22 @@
 Rails.application.routes.draw do
 
+  # Routes for the Lecture resource:
+  # CREATE
+  get('/lectures/new', { :controller => 'lectures', :action => 'new' })
+  get('/create_lecture', { :controller => 'lectures', :action => 'create' })
+
+  # READ
+  get('/lectures', { :controller => 'lectures', :action => 'index' })
+  get('/lectures/:id', { :controller => 'lectures', :action => 'show' })
+
+  # UPDATE
+  get('/lectures/:id/edit', { :controller => 'lectures', :action => 'edit' })
+  get('/update_lecture/:id', { :controller => 'lectures', :action => 'update' })
+
+  # DELETE
+  get('/delete_lecture/:id', { :controller => 'lectures', :action => 'destroy' })
+  #------------------------------
+
   # Routes for the Subject resource:
   # CREATE
   get('/subjects/new', { :controller => 'subjects', :action => 'new' })

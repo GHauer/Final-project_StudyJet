@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>StudyJet</title>
+  <title>InstaHomework</title>
 
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/lumen/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/superhero/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/my_styles.css">
 
   <style>
     /* Only necessary if you are using navbar-fixed-top */
@@ -22,10 +21,6 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
-
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0-beta.2/jquery-ui.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -37,26 +32,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">StudyJet</a>
-       <!-- Changing name of Brand in navbar -->
-       <!-- <%= Rails.application.class.parent_name %> -->
+      <a href="/" class="navbar-brand"><%= Rails.application.class.parent_name %></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="/subjects">Subjects</a></li>
+        <li><a href="/lessons">Lessons</a></li>
+        <li><a href="/followings">Followings</a></li>
+        <li><a href="/users">Users</a></li>
+        <li><a href="/my_favorites">My Favorites</a></li>
         <li><a href="/favorites">Favorites</a></li>
         <li><a href="/comments">Comments</a></li>
         <li><a href="/photos">Photos</a></li>
-        <!-- Added courses tab -->
-        <li><a href="/courses">Courses</a></li>
-        <li><a href="/my_wall">My Wall</a></li>
-        <li><a href="/my_favorites">My Favorites</a></li>
+        <li><a href="#">About</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <% if current_user.present? %>
-          <li><a href="/users/edit"><%= current_user.email %></a></li>
+        <% if false %>
+          <li><a href="/users/edit">Oscar the Grouch</a></li>
           <li><a href="/users/sign_out" data-method="delete">Sign out</a></li>
         <% else %>
           <li><a href="/users/sign_up">Sign up</a></li>
