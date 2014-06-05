@@ -27,6 +27,9 @@
         <!-- Embed dynamic YouTube video -->
         <iframe title="YouTube video player" width="640" height="390" src="<%=course.course_url%>" frameborder="0" allowfullscreen></iframe>
         <!-- <iframe src="<%=course.course_url%>"></iframe> -->
+
+        <video src="<%= course.course_url %>" width="200">
+
         <td><%= course.course_number %></td>
         <td><%= course.course_name %></td>
         <td><%= course.caption %></td>
