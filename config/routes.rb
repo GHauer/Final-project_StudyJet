@@ -96,9 +96,13 @@ Rails.application.routes.draw do
 
   get('/my_wall', { :controller => 'photos', :action => 'my_wall' })
 
-  get('/my_favorites', { :controller => 'photos', :action => 'my_favorites' })
+ get('/my_enrollments', { :controller => 'subjects', :action => 'my_enrollments' })
 
-  root 'photos#index'
+  root 'enrollments#index'
+
+  # get('/my_favorites', { :controller => 'photos', :action => 'my_favorites' })
+
+  # root 'photos#index'
 
   # Routes for the Favorite resource:
   # CREATE

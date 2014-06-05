@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140602014520) do
+ActiveRecord::Schema.define(version: 20140605151805) do
 
   create_table "comments", force: true do |t|
     t.text     "content"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(version: 20140602014520) do
     t.datetime "updated_at"
   end
 
+  create_table "enrollments", force: true do |t|
+    t.integer  "lesson_id"
+    t.integer  "subject_id"
+    t.string   "user_name"
+    t.integer  "subject_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "favorites", force: true do |t|
     t.integer  "photo_id"
     t.integer  "user_id"
@@ -42,6 +51,18 @@ ActiveRecord::Schema.define(version: 20140602014520) do
   create_table "followings", force: true do |t|
     t.integer  "leader_id"
     t.integer  "follower_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lectures", force: true do |t|
+    t.string   "lecture_url"
+    t.text     "caption"
+    t.integer  "lecture_number"
+    t.string   "lecture_name"
+    t.string   "file_type"
+    t.integer  "subject_number"
+    t.string   "subject_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
