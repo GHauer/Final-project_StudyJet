@@ -7,7 +7,7 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Lesson</th>
+      <th>Lecture</th>
       <th>Subject</th>
       <th>User name</th>
       <th>Subject number</th>
@@ -20,7 +20,7 @@
   <tbody>
     <% @enrollments.each do |enrollment| %>
       <tr>
-        <td><%= enrollment.lesson_id %></td>
+        <td><%= enrollment.lecture_id %></td>
         <td><%= enrollment.subject_id %></td>
         <td><%= enrollment.user_name %></td>
         <td><%= enrollment.subject_number %></td>

@@ -13,13 +13,13 @@ class EnrollmentsController < ApplicationController
 
   def create
     @enrollment = Enrollment.new
-    @enrollment.lesson_id = params[:lesson_id]
+    @enrollment.lecture_id = params[:lecture_id]
     @enrollment.subject_id = params[:subject_id]
     @enrollment.user_name = params[:user_name]
     @enrollment.subject_number = params[:subject_number]
 
     if @enrollment.save
-      redirect_to :back, :notice => "Enrollment successfull."
+      redirect_to "/enrollments", :notice => "Enrollment created successfully."
     else
       render 'new'
     end
@@ -32,13 +32,13 @@ class EnrollmentsController < ApplicationController
   def update
     @enrollment = Enrollment.find(params[:id])
 
-    @enrollment.lesson_id = params[:lesson_id]
+    @enrollment.lecture_id = params[:lecture_id]
     @enrollment.subject_id = params[:subject_id]
     @enrollment.user_name = params[:user_name]
     @enrollment.subject_number = params[:subject_number]
 
     if @enrollment.save
-      redirect_to :back, :notice => "Enrollment successfull."
+      redirect_to "/enrollments", :notice => "Enrollment updated successfully."
     else
       render 'edit'
     end
@@ -49,6 +49,6 @@ class EnrollmentsController < ApplicationController
 
     @enrollment.destroy
 
-    redirect_to :back, :notice => "Enrollment deleted."
+    redirect_to "/enrollments", :notice => "Enrollment deleted."
   end
 end

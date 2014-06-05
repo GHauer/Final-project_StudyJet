@@ -17,6 +17,23 @@ Rails.application.routes.draw do
   get('/delete_enrollment/:id', { :controller => 'enrollments', :action => 'destroy' })
   #------------------------------
 
+  # Routes for the Enrollment resource:
+  # CREATE
+  get('/enrollments/new', { :controller => 'enrollments', :action => 'new' })
+  get('/create_enrollment', { :controller => 'enrollments', :action => 'create' })
+
+  # READ
+  get('/enrollments', { :controller => 'enrollments', :action => 'index' })
+  get('/enrollments/:id', { :controller => 'enrollments', :action => 'show' })
+
+  # UPDATE
+  get('/enrollments/:id/edit', { :controller => 'enrollments', :action => 'edit' })
+  get('/update_enrollment/:id', { :controller => 'enrollments', :action => 'update' })
+
+  # DELETE
+  get('/delete_enrollment/:id', { :controller => 'enrollments', :action => 'destroy' })
+  #------------------------------
+
   # Routes for the Lecture resource:
   # CREATE
   get('/lectures/new', { :controller => 'lectures', :action => 'new' })
