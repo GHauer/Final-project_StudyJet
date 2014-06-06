@@ -17,22 +17,22 @@ Rails.application.routes.draw do
   get('/delete_enrollment/:id', { :controller => 'enrollments', :action => 'destroy' })
   #------------------------------
 
-  # Routes for the Enrollment resource:
-  # CREATE
-  get('/enrollments/new', { :controller => 'enrollments', :action => 'new' })
-  get('/create_enrollment', { :controller => 'enrollments', :action => 'create' })
+  # # Routes for the Enrollment resource:
+  # # CREATE
+  # get('/enrollments/new', { :controller => 'enrollments', :action => 'new' })
+  # get('/create_enrollment', { :controller => 'enrollments', :action => 'create' })
 
-  # READ
-  get('/enrollments', { :controller => 'enrollments', :action => 'index' })
-  get('/enrollments/:id', { :controller => 'enrollments', :action => 'show' })
+  # # READ
+  # get('/enrollments', { :controller => 'enrollments', :action => 'index' })
+  # get('/enrollments/:id', { :controller => 'enrollments', :action => 'show' })
 
-  # UPDATE
-  get('/enrollments/:id/edit', { :controller => 'enrollments', :action => 'edit' })
-  get('/update_enrollment/:id', { :controller => 'enrollments', :action => 'update' })
+  # # UPDATE
+  # get('/enrollments/:id/edit', { :controller => 'enrollments', :action => 'edit' })
+  # get('/update_enrollment/:id', { :controller => 'enrollments', :action => 'update' })
 
-  # DELETE
-  get('/delete_enrollment/:id', { :controller => 'enrollments', :action => 'destroy' })
-  #------------------------------
+  # # DELETE
+  # get('/delete_enrollment/:id', { :controller => 'enrollments', :action => 'destroy' })
+  # #------------------------------
 
   # Routes for the Lecture resource:
   # CREATE
@@ -70,40 +70,40 @@ Rails.application.routes.draw do
 
   # Routes for the Course resource:
   # CREATE
-  get('/courses/new', { :controller => 'courses', :action => 'new' })
-  get('/create_course', { :controller => 'courses', :action => 'create' })
+  # get('/courses/new', { :controller => 'courses', :action => 'new' })
+  # get('/create_course', { :controller => 'courses', :action => 'create' })
 
-  # READ
-  get('/courses', { :controller => 'courses', :action => 'index' })
-  get('/courses/:id', { :controller => 'courses', :action => 'show' })
+  # # READ
+  # get('/courses', { :controller => 'courses', :action => 'index' })
+  # get('/courses/:id', { :controller => 'courses', :action => 'show' })
 
-  # UPDATE
-  get('/courses/:id/edit', { :controller => 'courses', :action => 'edit' })
-  get('/update_course/:id', { :controller => 'courses', :action => 'update' })
+  # # UPDATE
+  # get('/courses/:id/edit', { :controller => 'courses', :action => 'edit' })
+  # get('/update_course/:id', { :controller => 'courses', :action => 'update' })
 
-  # DELETE
-  get('/delete_course/:id', { :controller => 'courses', :action => 'destroy' })
-  #------------------------------
+  # # DELETE
+  # get('/delete_course/:id', { :controller => 'courses', :action => 'destroy' })
+  # #------------------------------
 
-  get('/photos/search', { :controller => "photos", :action => "search" })
+  # get('/photos/search', { :controller => "photos", :action => "search" })
 
-  get("/my_timeline", { :controller => "photos", :action => "my_timeline" })
+  # get("/my_timeline", { :controller => "photos", :action => "my_timeline" })
 
-  # Routes for the Following resource:
-  # CREATE
-  get('/followings/new', { :controller => 'followings', :action => 'new' })
-  get('/create_following', { :controller => 'followings', :action => 'create' })
+  # # Routes for the Following resource:
+  # # CREATE
+  # get('/followings/new', { :controller => 'followings', :action => 'new' })
+  # get('/create_following', { :controller => 'followings', :action => 'create' })
 
-  # READ
-  get('/followings', { :controller => 'followings', :action => 'index' })
-  get('/followings/:id', { :controller => 'followings', :action => 'show' })
+  # # READ
+  # get('/followings', { :controller => 'followings', :action => 'index' })
+  # get('/followings/:id', { :controller => 'followings', :action => 'show' })
 
-  # UPDATE
-  get('/followings/:id/edit', { :controller => 'followings', :action => 'edit' })
-  get('/update_following/:id', { :controller => 'followings', :action => 'update' })
+  # # UPDATE
+  # get('/followings/:id/edit', { :controller => 'followings', :action => 'edit' })
+  # get('/update_following/:id', { :controller => 'followings', :action => 'update' })
 
-  # DELETE
-  get('/delete_following/:id', { :controller => 'followings', :action => 'destroy' })
+  # # DELETE
+  # get('/delete_following/:id', { :controller => 'followings', :action => 'destroy' })
   #------------------------------
 
   devise_for :users
@@ -123,53 +123,53 @@ Rails.application.routes.draw do
 
   # Routes for the Favorite resource:
   # CREATE
-  get('/favorites/new', { :controller => 'favorites', :action => 'new' })
-  get('/create_favorite', { :controller => 'favorites', :action => 'create' })
+  # get('/favorites/new', { :controller => 'favorites', :action => 'new' })
+  # get('/create_favorite', { :controller => 'favorites', :action => 'create' })
 
-  # READ
-  get('/favorites', { :controller => 'favorites', :action => 'index' })
-  get('/favorites/:id', { :controller => 'favorites', :action => 'show' })
+  # # READ
+  # get('/favorites', { :controller => 'favorites', :action => 'index' })
+  # get('/favorites/:id', { :controller => 'favorites', :action => 'show' })
 
-  # UPDATE
-  get('/favorites/:id/edit', { :controller => 'favorites', :action => 'edit' })
-  get('/update_favorite/:id', { :controller => 'favorites', :action => 'update' })
+  # # UPDATE
+  # get('/favorites/:id/edit', { :controller => 'favorites', :action => 'edit' })
+  # get('/update_favorite/:id', { :controller => 'favorites', :action => 'update' })
 
-  # DELETE
-  get('/delete_favorite/:id', { :controller => 'favorites', :action => 'destroy' })
-  #------------------------------
+  # # DELETE
+  # get('/delete_favorite/:id', { :controller => 'favorites', :action => 'destroy' })
+  # #------------------------------
 
-  # Routes for the Comment resource:
-  # CREATE
-  get('/comments/new', { :controller => 'comments', :action => 'new' })
-  get('/create_comment', { :controller => 'comments', :action => 'create' })
+  # # Routes for the Comment resource:
+  # # CREATE
+  # get('/comments/new', { :controller => 'comments', :action => 'new' })
+  # get('/create_comment', { :controller => 'comments', :action => 'create' })
 
-  # READ
-  get('/comments', { :controller => 'comments', :action => 'index' })
-  get('/comments/:id', { :controller => 'comments', :action => 'show' })
+  # # READ
+  # get('/comments', { :controller => 'comments', :action => 'index' })
+  # get('/comments/:id', { :controller => 'comments', :action => 'show' })
 
-  # UPDATE
-  get('/comments/:id/edit', { :controller => 'comments', :action => 'edit' })
-  get('/update_comment/:id', { :controller => 'comments', :action => 'update' })
+  # # UPDATE
+  # get('/comments/:id/edit', { :controller => 'comments', :action => 'edit' })
+  # get('/update_comment/:id', { :controller => 'comments', :action => 'update' })
 
-  # DELETE
-  get('/delete_comment/:id', { :controller => 'comments', :action => 'destroy' })
-  #------------------------------
+  # # DELETE
+  # get('/delete_comment/:id', { :controller => 'comments', :action => 'destroy' })
+  # #------------------------------
 
-  # Routes for the Photo resource:
-  # CREATE
-  get('/photos/new', { :controller => 'photos', :action => 'new' })
-  post('/create_photo', { :controller => 'photos', :action => 'create' })
+  # # Routes for the Photo resource:
+  # # CREATE
+  # get('/photos/new', { :controller => 'photos', :action => 'new' })
+  # post('/create_photo', { :controller => 'photos', :action => 'create' })
 
-  # READ
-  get('/photos', { :controller => 'photos', :action => 'index' })
-  get('/photos/:id', { :controller => 'photos', :action => 'show' })
+  # # READ
+  # get('/photos', { :controller => 'photos', :action => 'index' })
+  # get('/photos/:id', { :controller => 'photos', :action => 'show' })
 
-  # UPDATE
-  get('/photos/:id/edit', { :controller => 'photos', :action => 'edit' })
-  get('/update_photo/:id', { :controller => 'photos', :action => 'update' })
+  # # UPDATE
+  # get('/photos/:id/edit', { :controller => 'photos', :action => 'edit' })
+  # get('/update_photo/:id', { :controller => 'photos', :action => 'update' })
 
-  # DELETE
-  get('/delete_photo/:id', { :controller => 'photos', :action => 'destroy' })
+  # # DELETE
+  # get('/delete_photo/:id', { :controller => 'photos', :action => 'destroy' })
   #------------------------------
 
   # The priority is based upon order of creation: first created -> highest priority.
