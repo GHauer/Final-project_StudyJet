@@ -115,7 +115,7 @@ Rails.application.routes.draw do
 
  get('/my_enrollments', { :controller => 'subjects', :action => 'my_enrollments' })
 
-  root 'enrollments#index'
+  root 'subjects#index'
 
   # get('/my_favorites', { :controller => 'photos', :action => 'my_favorites' })
 
