@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20140606025231) do
   end
 
   create_table "enrollments", force: true do |t|
-    t.integer  "lesson_id"
+    t.integer  "lecture_id"
     t.integer  "subject_id"
     t.string   "user_name"
     t.integer  "subject_number"
