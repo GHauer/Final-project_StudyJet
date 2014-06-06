@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140605151805) do
+ActiveRecord::Schema.define(version: 20140606025231) do
 
   create_table "comments", force: true do |t|
     t.text     "content"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20140605151805) do
   end
 
   create_table "enrollments", force: true do |t|
-    t.integer  "lecture_id"
+    t.integer  "lesson_id"
     t.integer  "subject_id"
     t.string   "user_name"
     t.integer  "subject_number"
