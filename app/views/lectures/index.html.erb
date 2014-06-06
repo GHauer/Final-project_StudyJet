@@ -23,6 +23,11 @@
   <tbody>
     <% @lectures.each do |lecture| %>
       <tr>
+
+        <!-- Embed dynamic YouTube video -->
+
+        <iframe title="YouTube video player" width="650" height="380" src=<%=lecture.lecture_url%> frameborder="0" allowfullscreen></iframe>
+
         <td><%= lecture.lecture_url %></td>
         <td><%= lecture.caption %></td>
         <td><%= lecture.lecture_number %></td>
